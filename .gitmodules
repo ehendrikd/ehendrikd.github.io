@@ -1,0 +1,3 @@
+[submodule "Adaptronic-e420d-ESP32-Data-Dash"]
+	path = Adaptronic-e420d-ESP32-Data-Dash
+	url = https://github.com/ehendrikd/Adaptronic-e420d-ESP32-Data-Dash
