@@ -15,19 +15,18 @@
 				connectGPS.addEventListener("change", function(event) {
 					iframeWindow.simulateGPSConnected = connectGPS.checked;
 				});
-/*
 				iframe.addEventListener("load", function(event) {
-					iframeDocument.simulateECUConnected = connectECU.checked;
-					iframeDocument.simulateGPSConnected = connectGPS.checked;
-				});
-*/				
+					iframeWindow.simulate = true;
+					iframeWindow.simulateECUConnected = connectECU.checked;
+					iframeWindow.simulateGPSConnected = connectGPS.checked;
+				});				
 			});
 		</script>
 	</head>
 	<body style="margin-top: 0px; font-family: sans-serif;">
 		<div style="width: 100%; text-align: center;">
 			<div style="background-image: url(tablet.png); background-repeat: no-repeat; width: 1280px; height: 888px; display: inline-block;">
-				<iframe id="dash-iframe" src="http://localhost:8000/index.html?simulate=true" width="1024" height="621" style="border: none; margin-top: 145px;" scrolling="no"></iframe>
+				<iframe id="dash-iframe" src="../Adaptronic-e420d-ESP32-Data-Dash/dash/html" width="1024" height="621" style="border: none; margin-top: 145px;" scrolling="no"></iframe>
 			</div>
 		</div>
 		<div style="width: 100%; text-align: center;">
